@@ -25,9 +25,9 @@ python code cleaner and more orgenized, easy to maintain and understand.
 Below are the views I used.
 
 ### View 1: hits (‘table’ #4)
-'''create view hits as
+```create view hits as
 select substring(path from 10) as slug, count(path)
 from log
 where (status = '200 OK') and (position('/article/' in path) = 1)
 group by path
-order by count desc;'''
+order by count desc;```
