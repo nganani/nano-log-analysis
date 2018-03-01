@@ -11,10 +11,21 @@ requested here, based on a given database:
 
 ### How to run this code
 Install postgres if not already installed, create empty database called 'news'
-and upload the data into it. See below the process to do so:
-```
-python3 log.py
-```
+and upload the data into it. then, clone this GitHub repo to your local machine.
+See below the process to do so:
+1. install PostgresSQL on your machine see
+[here]: url "https://wiki.postgresql.org/wiki/Detailed_installation_guides"
+for more details.
+2. Use the command ```psql -d postgres``` to enter the defult database. If you
+encounter issue with your credentials and permissions in postgres, see this "https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge"
+article that may help.
+3. Create new database named 'news', using this command ```CREATE DATABASE news;```
+4. Next, download the data [here]: url "https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip".
+You will need to unzip this file after downloading it. The file inside is
+called ```newsdata.sql```.
+5. Use the command psql -d news -f newsdata.sql to upload it
+6. Finally, to run the code, simply type ```python3 log.py``` in the cloned local folder.
+Code was written with python 3 in mind, but should work just file on python 2.
 You should get the response shown in the ```output.txt``` in this git repo
 
 ### Note

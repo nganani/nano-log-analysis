@@ -26,7 +26,7 @@ rows = c.fetchall()
 
 # b. print it
 base = "   {0}: {1} views"
-print ()
+print ("")
 print ("Most popular 3 articles of all times:")
 for row in rows:
     print (base.format(row[0], row[1]))
@@ -38,7 +38,7 @@ c.execute(query)
 rows = c.fetchall()
 
 # b. print it
-print ()
+print ("")
 print ("Most popular authors of all times:")
 for row in rows:
     print (base.format(row[0], row[1]))
@@ -51,7 +51,7 @@ rows = c.fetchall()
 
 # b. print it
 base = "  {0}: {1}% error rate ({2} out of {3} requests)"
-print ()
+print ("")
 print ("Days with errors > 1%:")
 for row in rows:
     nice_date = row[0].strftime('%B %d, %Y')  # MMMM DD, YYY format
