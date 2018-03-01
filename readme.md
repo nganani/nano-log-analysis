@@ -1,6 +1,6 @@
-### Log Analysis project for nano degree
+# Log Analysis project for nano degree
 ## Gathering information from a simple database
-# Developer: Nir Ganani
+### Developer: Nir Ganani
 
 since this project was all about database,
 I decided to do the heavy lifting in SQL, even
