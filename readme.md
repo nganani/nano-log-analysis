@@ -15,7 +15,7 @@ and upload the data into it. See below the process to do so:
 ```
 python3 log.py
 ```
-You should get the response shown in the output.txt in this git repo
+You should get the response shown in the ```output.txt``` in this git repo
 
 ### Note
 Since this project was all about learning about relational databases and SQL,
