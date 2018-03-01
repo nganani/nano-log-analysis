@@ -26,10 +26,10 @@ rows = c.fetchall()
 
 # b. print it
 base = "   {0}: {1} views"
-print ("")
-print ("Most popular 3 articles of all times:")
+print("")
+print("Most popular 3 articles of all times:")
 for row in rows:
-    print (base.format(row[0], row[1]))
+    print(base.format(row[0], row[1]))
 
 # Task 2: Most popular authors or all time
 # a. select top authors from predefined view in the database
@@ -38,10 +38,10 @@ c.execute(query)
 rows = c.fetchall()
 
 # b. print it
-print ("")
-print ("Most popular authors of all times:")
+print("")
+print("Most popular authors of all times:")
 for row in rows:
-    print (base.format(row[0], row[1]))
+    print(base.format(row[0], row[1]))
 
 # Task 3: Days with errors > 1%
 # a. select the top 3 from predefined view in the database
@@ -51,11 +51,11 @@ rows = c.fetchall()
 
 # b. print it
 base = "  {0}: {1}% error rate ({2} out of {3} requests)"
-print ("")
-print ("Days with errors > 1%:")
+print("")
+print("Days with errors > 1%:")
 for row in rows:
     nice_date = row[0].strftime('%B %d, %Y')  # MMMM DD, YYY format
-    print (base.format(nice_date, row[1], row[2], row[3]))
+    print(base.format(nice_date, row[1], row[2], row[3]))
 
 # Close database
 db.close()
